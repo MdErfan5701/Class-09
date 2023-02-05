@@ -1,0 +1,148 @@
+/* --common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* --common css end*/
+
+/* -- nav section start */
+#navigation{
+    background-color: #02918b;
+}
+
+#navigation div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 16px 25px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#navigation ul li:hover a{
+    background-color: #cfc91d;
+    color: #0b1016;
+    border-radius: 15px;
+}
+/* -- nav section end */
+
+/* -- banner section start */
+
+#banner{
+    background-image: url(../images/banner/banner-bg.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner p{
+    font-size: 18px;
+}
+#banner img{
+    display: block;
+    margin: 52px auto;
+}
+#banner a{
+    background-color: #cfc91d;
+    color: #0b1016;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 19px 42px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#banner a:hover{
+    background-color: #02918b;
+    color: #ffffff;
+}
+/* -- banner section end */
+
+/* -- about me section start */
+#aboutMe{
+    margin: 98px auto;
+    text-align: center;
+    color: #7e8287;
+}
+#aboutMe h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#aboutMe p{
+    margin: 36px 0 120px;
+    line-height: 2;
+    font-size: 16px;
+}
+#aboutMe .row{
+    justify-content:space-evenly;
+    align-items: center;
+}
+#aboutMe .row img{
+    margin-bottom: 28px;
+}
+#aboutMe .row h4{
+    font-size: 16px;
+    font-weight: 800;
+}
+#aboutMe .row p{
+    font-size: 11px;
+}
+/* -- about me section end */
